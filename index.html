@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>145 BPM | Coletivo de psytrance</title>
+  <meta name="description" content="145 BPM é um coletivo de psytrance nascido da pista e construído pela amizade. Conheça Dibe, Sidus, Recursive Mind e Poran, veja a agenda e entre na comunidade.">
+  <meta name="theme-color" content="#07020d">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="145 BPM | Coletivo de psytrance">
+  <meta property="og:description" content="Nascida da pista. Construída pela amizade.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;900&family=Chakra+Petch:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="site">
+
+  <!-- ============ HERO (video fixo) ============ -->
+  <div id="inicio" style="position: relative">
+  <section style="position: sticky; top: 0; z-index: 1; height: 100vh; min-height: 560px; overflow: hidden; background: #040108">
+
+    <!-- video centralizado, bordas dissolvidas no fundo -->
+    <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center">
+      <video class="hv" src="assets/video/hero.mp4" poster="assets/video/hero-poster.jpg" autoplay muted loop playsinline preload="auto" aria-label="Animação da arte da 145 BPM: mulher com mãos metálicas entre ondas sonoras roxas e verde-limão" style="width: 100%; height: 100%; display: block; -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 7%, #000 93%, transparent 100%); mask-image: linear-gradient(90deg, transparent 0%, #000 7%, #000 93%, transparent 100%)"></video>
+    </div>
+
+    <!-- vinheta: topo e base escuros para o texto -->
+    <div style="position: absolute; inset: 0; pointer-events: none; background: linear-gradient(180deg, rgba(4,1,8,.85) 0%, rgba(4,1,8,0) 22%, rgba(4,1,8,0) 58%, rgba(4,1,8,.92) 100%)"></div>
+
+    <!-- navegacao -->
+    <nav class="nav" style="position: absolute; top: 0; left: 0; right: 0; z-index: 5; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 32px; padding: 24px 48px">
+      <a href="#inicio" aria-label="145 BPM, voltar ao topo" style="min-height: 44px; display: inline-flex; align-items: center"><img src="assets/img/logos/145bpm.webp" alt="145 BPM" style="height: 60px; width: auto; display: block"></a>
+      <div style="display: flex; flex-wrap: wrap; gap: 0 28px; font-size: 14px; letter-spacing: .18em; text-transform: uppercase; font-weight: 500">
+        <a href="#sobre" style="padding: 12px 0">Sobre</a>
+        <a href="#midias" style="padding: 12px 0">Mídias</a>
+        <a href="#fotos" style="padding: 12px 0">Fotos</a>
+        <a href="#agenda" style="padding: 12px 0">Agenda</a>
+        <a href="#loja" style="padding: 12px 0">Loja</a>
+        <a href="#contato" style="padding: 12px 0">Contato</a>
+      </div>
+    </nav>
+
+    <!-- frase do coletivo -->
+    <div style="position: absolute; left: 0; right: 0; bottom: 0; z-index: 4; display: flex; flex-direction: column; align-items: center; gap: 20px; padding: 0 24px 40px; text-align: center">
+      <span style="font-size: 13px; letter-spacing: .34em; text-transform: uppercase; color: var(--lime)">Coletivo 145 BPM</span>
+      <h1 style="margin: 0; font-family: 'Unbounded', sans-serif; font-weight: 900; font-size: 40px; line-height: 1.08; text-transform: uppercase">
+        <span style="display: block">Nascida da pista.</span>
+        <span class="a-shimmer" style="display: block; background-image: linear-gradient(90deg, var(--purple), var(--lime), var(--purple)); -webkit-background-clip: text; background-clip: text; color: transparent">Construída pela amizade.</span>
+      </h1>
+      <a href="#sobre" class="a-float" style="display: inline-flex; flex-direction: column; align-items: center; gap: 6px; min-height: 44px; font-size: 12px; letter-spacing: .3em; text-transform: uppercase; color: var(--muted)">
+        Role
+        <svg width="18" height="26" viewBox="0 0 18 26" fill="none" stroke="#c6ff1a" stroke-width="1.6" aria-hidden="true"><rect x="1" y="1" width="16" height="24" rx="8"/><circle class="a-beat" cx="9" cy="8" r="2" fill="#c6ff1a" stroke="none"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- conteudo que sobe por cima do video -->
+  <div style="position: relative; z-index: 2; background: var(--ink); box-shadow: 0 -60px 80px 20px var(--ink)">
+
+<!-- ============ TICKER ============ -->
+  <div style="border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: #0d0418; overflow: hidden; white-space: nowrap">
+    <div class="a-marquee" style="display: inline-flex; width: max-content">
+      
+        <span style="display: inline-flex; align-items: center; gap: 28px; padding: 18px 28px 18px 0; font-family: 'Unbounded', sans-serif; font-weight: 700; font-size: 15px; letter-spacing: .12em; text-transform: uppercase; color: #c6ff1a">
+          145 BPM
+          <span style="color: var(--muted)">✦</span>
+        </span>
+      
+        <span style="display: inline-flex; align-items: center; gap: 28px; padding: 18px 28px 18px 0; font-family: 'Unbounded', sans-serif; font-weight: 700; font-size: 15px; letter-spacing: .12em; text-transform: uppercase; color: #f3eefb">
+          Nascida da pista
+          <span style="color: var(--muted)">✦</span>
+        </span>
+      
+        <span style="display: inline-flex; align-items: center; gap: 28px; padding: 18px 28px 18px 0; font-family: 'Unbounded', sans-serif; font-weight: 700; font-size: 15px; letter-spacing: .12em; text-transform: uppercase; color: #a63cff">
+          Dibe
+          <span style="color: var(--muted)">✦</span>
+        </span>
+      
+        <span style="display: inline-flex; align-items: center; gap: 28px; padding: 18px 28px 18px 0; font-family: 'Unbounded', sans-serif; font-weight: 700; font-size: 15px; letter-spacing: .12em; text-transform: uppercase; color: #c6ff1a">
+          Sidus
+          <span style="color: var(--muted)">✦</span>
+        </span>
+      
+        <span style="display: inline-flex; align-items: center; gap: 28px; padding: 18px 28px 18px 0; font-family: 'Unbounded', sans-serif; font-weight: 700; font-size: 15px; letter-spacing: .12em; text-transform: uppercase; color: #f3eefb">
+          Construída pela amizade
+          <span style="color: var(--muted)">✦</span>
+        </span>
+      
+        <span style="display: inline-flex; align-items: center; gap: 28px; padding: 18px 28px 18px 0; font-family: 'Unbounded', sans-serif; font-weight: 700; font-size: 15px; letter-spacing: .12em; text-transform: uppercase; color: #a63cff">
+          Recursive Mind
+          <span style="color: var(--muted)">✦</span>
+        </span>
+      
+        <span style="display: inline-flex; align-items: center; gap: 28px; padding: 18px 28px 18px 0; font-family: 'Unbounded', sans-serif; font-weight: 700; font-size: 15px; letter-spacing: .12em; text-transform: uppercase; color: #c6ff1a">
+          Poran
+          <span style="color: var(--muted)">✦</span>
+        </span>
+      
+        <span style="display: inline-flex; align-items: center; gap: 28px; padding: 18px 28px 18px 0; font-family: 'Unbounded', sans-serif; font-weight: 700; font-size: 15px; letter-spacing: .12em; text-transform: uppercase; color: #c6ff1a">
+          145 BPM
+          <span style="color: var(--muted)">✦</span>
+        </span>
+      
+        <span style="display: inline-flex; align-items: center; gap: 28px; padding: 18px 28px 18px 0; font-family: 'Unbounded', sans-serif; font-weight: 700; font-size: 15px; letter-spacing: .12em; text-transform: uppercase; color: #f3eefb">
+          Nascida da pista
+          <span style="color: var(--muted)">✦</span>
+        </span>
+      
+        <span style="display: inline-flex; align-items: center; gap: 28px; padding: 18px 28px 18px 0; font-family: 'Unbounded', sans-serif; font-weight: 700; font-size: 15px; letter-spacing: .12em; text-transform: uppercase; color: #a63cff">
+          Dibe
+          <span style="color: var(--muted)">✦</span>
+        </span>
+      
+        <span style="display: inline-flex; align-items: center; gap: 28px; padding: 18px 28px 18px 0; font-family: 'Unbounded', sans-serif; font-weight: 700; font-size: 15px; letter-spacing: .12em; text-transform: uppercase; color: #c6ff1a">
+          Sidus
+          <span style="color: var(--muted)">✦</span>
+        </span>
+      
+        <span style="display: inline-flex; align-items: center; gap: 28px; padding: 18px 28px 18px 0; font-family: 'Unbounded', sans-serif; font-weight: 700; font-size: 15px; letter-spacing: .12em; text-transform: uppercase; color: #f3eefb">
+          Construída pela amizade
+          <span style="color: var(--muted)">✦</span>
+        </span>
+      
+        <span style="display: inline-flex; align-items: center; gap: 28px; padding: 18px 28px 18px 0; font-family: 'Unbounded', sans-serif; font-weight: 700; font-size: 15px; letter-spacing: .12em; text-transform: uppercase; color: #a63cff">
+          Recursive Mind
+          <span style="color: var(--muted)">✦</span>
+        </span>
+      
+        <span style="display: inline-flex; align-items: center; gap: 28px; padding: 18px 28px 18px 0; font-family: 'Unbounded', sans-serif; font-weight: 700; font-size: 15px; letter-spacing: .12em; text-transform: uppercase; color: #c6ff1a">
+          Poran
+          <span style="color: var(--muted)">✦</span>
+        </span>
+      
+    </div>
+  </div>
+
+  <!-- ============ SOBRE ============ -->
+  <section id="sobre" style="max-width: 1280px; margin: 0 auto; padding: 120px 48px 40px">
+    <div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 24px 64px; margin-bottom: 56px">
+      <div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+        <span style="font-size: 13px; letter-spacing: .3em; text-transform: uppercase; color: var(--lime)">01 / Sobre</span>
+        <h2 style="margin: 0; font-family: 'Unbounded', sans-serif; font-weight: 900; font-size: 44px; line-height: 1.1; text-transform: uppercase">Conheça a <span style="color: var(--purple)">145 BPM</span></h2>
+      </div>
+      <p style="flex: 1 1 420px; min-width: 0; margin: 0; color: var(--muted); font-size: 18px; max-width: 560px">A 145 BPM é um coletivo de psytrance nascido da pista e construído pela amizade. Quatro projetos, uma mesma frequência: groove, energia e conexão com quem dança.</p>
+    </div>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 24px">
+      
+        <article class="card" style="flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: #0d0418">
+          <div style="position: relative; height: 440px; background: linear-gradient(135deg, #1b0836, #0b0314 60%, #1d2a04); overflow: hidden">
+            
+              <img src="assets/img/integrantes/dibe.jpg" alt="Dibe tocando de fone no pescoço, em frente aos CDJs" loading="lazy" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 28%">
+            
+            <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(13,4,24,0) 55%, rgba(13,4,24,.95) 100%)"></div>
+          </div>
+          <div style="flex: 1; display: flex; flex-direction: column; gap: 16px; padding: 24px 28px 28px">
+            <div style="display: flex; align-items: center; gap: 14px; height: 116px">
+              <img src="assets/img/logos/dibe.webp" alt="Logo Dibe" loading="lazy" style="height: 56px; width: 150px; object-fit: contain; object-position: left center; flex: 0 0 auto">
+              <div style="min-width: 0">
+                <div style="font-family: 'Unbounded', sans-serif; font-weight: 700; font-size: 22px; text-transform: uppercase">Dibe</div>
+                <div style="font-size: 13px; letter-spacing: .18em; text-transform: uppercase; color: var(--lime)">Psytrance</div>
+              </div>
+            </div>
+            <p style="margin: 0; color: var(--muted); font-size: 16px">Nascido e criado em Fortaleza (CE), conheceu o psytrance em 2023 e nunca mais saiu da pista. Grooves envolventes, drops eufóricos e energia crescente.</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: auto">
+              <a class="btn btn-purple" href="https://soundcloud.com/gabriel-dibe-154489700" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 20px; border: 1px solid var(--purple); border-radius: 4px; font-size: 13px; letter-spacing: .16em; text-transform: uppercase; font-weight: 600">SoundCloud</a>
+              
+                <a class="btn btn-purple" href="https://www.instagram.com/dibe_dj/" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 20px; border: 1px solid var(--line); border-radius: 4px; font-size: 13px; letter-spacing: .16em; text-transform: uppercase; font-weight: 600">Instagram</a>
+              
+            </div>
+          </div>
+        </article>
+      
+        <article class="card" style="flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: #0d0418">
+          <div style="position: relative; height: 440px; background: linear-gradient(135deg, #1b0836, #0b0314 60%, #1d2a04); overflow: hidden">
+            
+              <img src="assets/img/integrantes/sidus.jpg" alt="Sidus sorrindo, de fones, atrás dos decks" loading="lazy" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 55% 30%">
+            
+            <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(13,4,24,0) 55%, rgba(13,4,24,.95) 100%)"></div>
+          </div>
+          <div style="flex: 1; display: flex; flex-direction: column; gap: 16px; padding: 24px 28px 28px">
+            <div style="display: flex; align-items: center; gap: 14px; height: 116px">
+              <img src="assets/img/logos/sidus.webp" alt="Logo Sidus" loading="lazy" style="height: 112px; width: 101px; object-fit: contain; object-position: left center; flex: 0 0 auto">
+              <div style="min-width: 0">
+                <div style="font-family: 'Unbounded', sans-serif; font-weight: 700; font-size: 22px; text-transform: uppercase">Sidus</div>
+                <div style="font-size: 13px; letter-spacing: .18em; text-transform: uppercase; color: var(--lime)">Full-on</div>
+              </div>
+            </div>
+            <p style="margin: 0; color: var(--muted); font-size: 16px">Natural de Curitiba e morando em Fortaleza, passou 7 anos no tech house antes de encontrar no full-on sua expressão. Sets explosivos, com batidas intensas e grooves envolventes.</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: auto">
+              <a class="btn btn-purple" href="https://soundcloud.com/sidus-656799921" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 20px; border: 1px solid var(--purple); border-radius: 4px; font-size: 13px; letter-spacing: .16em; text-transform: uppercase; font-weight: 600">SoundCloud</a>
+              
+                <a class="btn btn-purple" href="https://www.instagram.com/sidus.psy/" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 20px; border: 1px solid var(--line); border-radius: 4px; font-size: 13px; letter-spacing: .16em; text-transform: uppercase; font-weight: 600">Instagram</a>
+              
+            </div>
+          </div>
+        </article>
+      
+        <article class="card" style="flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: #0d0418">
+          <div style="position: relative; height: 440px; background: linear-gradient(135deg, #1b0836, #0b0314 60%, #1d2a04); overflow: hidden">
+            
+              <img src="assets/img/integrantes/recursive.jpg" alt="Recursive Mind tocando sob luz azul e roxa" loading="lazy" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 38%">
+            
+            <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(13,4,24,0) 55%, rgba(13,4,24,.95) 100%)"></div>
+          </div>
+          <div style="flex: 1; display: flex; flex-direction: column; gap: 16px; padding: 24px 28px 28px">
+            <div style="display: flex; align-items: center; gap: 17px; height: 116px">
+              <img src="assets/img/logos/recursive-mind.webp" alt="Logo Recursive Mind" loading="lazy" style="height: 116px; width: 100px; object-fit: contain; object-position: left center; flex: 0 0 auto">
+              <div style="min-width: 0">
+                <div style="font-family: 'Unbounded', sans-serif; font-weight: 700; font-size: 22px; text-transform: uppercase">Recursive Mind</div>
+                <div style="font-size: 13px; letter-spacing: .18em; text-transform: uppercase; color: var(--lime)">Progressive · Full-on</div>
+              </div>
+            </div>
+            <p style="margin: 0; color: var(--muted); font-size: 16px">Projeto de psytrance que traduz o conceito de recursão em som: padrões, grooves hipnóticos e construções de energia pensadas para conduzir a pista.</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: auto">
+              <a class="btn btn-purple" href="https://soundcloud.com/recursive-mind" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 20px; border: 1px solid var(--purple); border-radius: 4px; font-size: 13px; letter-spacing: .16em; text-transform: uppercase; font-weight: 600">SoundCloud</a>
+              
+                <a class="btn btn-purple" href="https://www.instagram.com/recursivemind.psy/" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 20px; border: 1px solid var(--line); border-radius: 4px; font-size: 13px; letter-spacing: .16em; text-transform: uppercase; font-weight: 600">Instagram</a>
+              
+            </div>
+          </div>
+        </article>
+      
+        <article class="card" style="flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: #0d0418">
+          <div style="position: relative; height: 440px; background: linear-gradient(135deg, #1b0836, #0b0314 60%, #1d2a04); overflow: hidden">
+            
+              <img src="assets/img/integrantes/poran.jpg" alt="Poran tocando com fones de ouvido" loading="lazy" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 32% 35%">
+            
+            <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(13,4,24,0) 55%, rgba(13,4,24,.95) 100%)"></div>
+          </div>
+          <div style="flex: 1; display: flex; flex-direction: column; gap: 16px; padding: 24px 28px 28px">
+            <div style="display: flex; align-items: center; gap: 14px; height: 116px">
+              <img src="assets/img/logos/poran.webp" alt="Logo Poran" loading="lazy" style="height: 88px; width: 110px; object-fit: contain; object-position: left center; flex: 0 0 auto">
+              <div style="min-width: 0">
+                <div style="font-family: 'Unbounded', sans-serif; font-weight: 700; font-size: 22px; text-transform: uppercase">Poran</div>
+                <div style="font-size: 13px; letter-spacing: .18em; text-transform: uppercase; color: var(--lime)">Progressive</div>
+              </div>
+            </div>
+            <p style="margin: 0; color: var(--muted); font-size: 16px">DJ de psytrance focado em High Energy Progressive a 145 BPM. Sets contínuos, intensos e hipnóticos, com a constância do BPM e a pressão de pista cheia.</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: auto">
+              <a class="btn btn-purple" href="https://soundcloud.com/poranpsy" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 20px; border: 1px solid var(--purple); border-radius: 4px; font-size: 13px; letter-spacing: .16em; text-transform: uppercase; font-weight: 600">SoundCloud</a>
+              
+                <a class="btn btn-purple" href="https://www.instagram.com/poranpsy/" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 20px; border: 1px solid var(--line); border-radius: 4px; font-size: 13px; letter-spacing: .16em; text-transform: uppercase; font-weight: 600">Instagram</a>
+              
+            </div>
+          </div>
+        </article>
+      
+    </div>
+
+    <!-- comunidade -->
+    <div style="position: relative; overflow: hidden; margin-top: 40px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px 40px; padding: 40px 48px; border: 1px solid var(--line); border-radius: 12px; background: linear-gradient(120deg, #1b0836 0%, #0b0314 55%, #1d2a04 100%)">
+      <img src="assets/img/comunidade-fundo.jpg" alt="" aria-hidden="true" loading="lazy" style="position: absolute; right: 0; top: 0; width: 75%; height: 100%; object-fit: cover; object-position: 50% 30%; opacity: .3; pointer-events: none; -webkit-mask-image: linear-gradient(270deg, #000 30%, transparent 100%); mask-image: linear-gradient(270deg, #000 30%, transparent 100%)">
+      <div style="position: relative; flex: 1 1 320px; min-width: 0">
+        <div style="font-family: 'Unbounded', sans-serif; font-weight: 700; font-size: 24px; text-transform: uppercase">A pista é de todos</div>
+        <div style="color: var(--muted); font-size: 17px">Entre no grupo e acompanhe os próximos encontros do coletivo.</div>
+      </div>
+      <a class="btn btn-lime" href="https://chat.whatsapp.com/KbqkWr4U1tp4w7MKxlo4Q9" target="_blank" rel="noopener" style="position: relative; display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 0 32px; border-radius: 4px; background: var(--lime); color: #0b0314; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; font-size: 14px; text-align: center">Faça parte da nossa comunidade</a>
+    </div>
+  </section>
+
+  <!-- ============ MIDIAS ============ -->
+  <section id="midias" style="max-width: 1280px; margin: 0 auto; padding: 120px 48px 40px">
+    <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 48px">
+      <span style="font-size: 13px; letter-spacing: .3em; text-transform: uppercase; color: var(--lime)">02 / Mídias</span>
+      <h2 style="margin: 0; font-family: 'Unbounded', sans-serif; font-weight: 900; font-size: 44px; line-height: 1.1; text-transform: uppercase">Ouça. Assista.<br>Sinta o <span style="color: var(--purple)">145</span>.</h2>
+    </div>
+    <div style="display: flex; flex-wrap: wrap; align-items: stretch; gap: 24px">
+      <div class="card" style="flex: 0 1 380px; width: 100%; min-width: 0; display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: #0d0418">
+        <video src="assets/video/aftermovie.mp4" poster="assets/video/aftermovie-poster.jpg" controls playsinline preload="metadata" aria-label="After movie da 145 BPM" style="display: block; width: 100%; height: auto; aspect-ratio: 9 / 16; background: #000"></video>
+        <div style="padding: 20px 24px">
+          <div style="font-family: 'Unbounded', sans-serif; font-weight: 700; font-size: 18px; text-transform: uppercase">After movie 145 BPM</div>
+          <div style="color: var(--muted); font-size: 15px">Vídeo em destaque do coletivo. Aperte o play e ative o som.</div>
+        </div>
+      </div>
+      <div style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+        <div style="display: flex; flex-wrap: wrap; gap: 24px">
+          <a class="card" href="https://www.instagram.com/145bpm.psy/" target="_blank" rel="noopener" style="flex: 1 1 200px; min-width: 0; display: flex; flex-direction: column; gap: 16px; padding: 28px; border: 1px solid var(--line); border-radius: 8px; background: #0d0418">
+            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#c6ff1a" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="#c6ff1a"/></svg>
+            <div><div style="font-family: 'Unbounded', sans-serif; font-weight: 700; font-size: 18px; text-transform: uppercase">Instagram</div><div style="color: var(--muted); font-size: 15px">@145bpm.psy</div></div>
+          </a>
+          <a class="card" href="https://youtu.be/uDF5s1l__rY" target="_blank" rel="noopener" style="flex: 1 1 200px; min-width: 0; display: flex; flex-direction: column; gap: 16px; padding: 28px; border: 1px solid var(--line); border-radius: 8px; background: #0d0418">
+            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#c6ff1a" stroke-width="1.6" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="3"/><path d="M10 9.5 L15 12 L10 14.5 Z"/></svg>
+            <div><div style="font-family: 'Unbounded', sans-serif; font-weight: 700; font-size: 18px; text-transform: uppercase">Conheça nosso som</div><div style="color: var(--muted); font-size: 15px">Assistir no YouTube ↗</div></div>
+          </a>
+        </div>
+        <div class="card" style="flex: 1 1 auto; display: flex; flex-direction: column; gap: 8px; padding: 28px; border: 1px solid var(--line); border-radius: 8px; background: #0d0418">
+          <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 8px">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#a63cff" stroke-width="1.6" aria-hidden="true"><path d="M9 18V6l10-2v12"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="16.5" cy="16" r="2.5"/></svg>
+            <div><div style="font-family: 'Unbounded', sans-serif; font-weight: 700; font-size: 18px; text-transform: uppercase">SoundCloud</div><div style="color: var(--muted); font-size: 15px">Ouça os sets de cada projeto</div></div>
+          </div>
+          <div style="flex: 1; display: flex; flex-direction: column">
+            
+              <a href="https://soundcloud.com/poranpsy" target="_blank" rel="noopener" style="flex: 1; display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 56px; border-top: 1px solid var(--line); font-family: 'Unbounded', sans-serif; font-weight: 500; font-size: 16px; letter-spacing: .08em; text-transform: uppercase">
+                <span>Poran</span>
+                <span style="color: var(--lime); font-size: 20px">↗</span>
+              </a>
+            
+              <a href="https://soundcloud.com/recursive-mind" target="_blank" rel="noopener" style="flex: 1; display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 56px; border-top: 1px solid var(--line); font-family: 'Unbounded', sans-serif; font-weight: 500; font-size: 16px; letter-spacing: .08em; text-transform: uppercase">
+                <span>Recursive Mind</span>
+                <span style="color: var(--lime); font-size: 20px">↗</span>
+              </a>
+            
+              <a href="https://soundcloud.com/sidus-656799921" target="_blank" rel="noopener" style="flex: 1; display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 56px; border-top: 1px solid var(--line); font-family: 'Unbounded', sans-serif; font-weight: 500; font-size: 16px; letter-spacing: .08em; text-transform: uppercase">
+                <span>Sidus</span>
+                <span style="color: var(--lime); font-size: 20px">↗</span>
+              </a>
+            
+              <a href="https://soundcloud.com/gabriel-dibe-154489700" target="_blank" rel="noopener" style="flex: 1; display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 56px; border-top: 1px solid var(--line); font-family: 'Unbounded', sans-serif; font-weight: 500; font-size: 16px; letter-spacing: .08em; text-transform: uppercase">
+                <span>Dibe</span>
+                <span style="color: var(--lime); font-size: 20px">↗</span>
+              </a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOTOS ============ -->
+  <section id="fotos" style="max-width: 1280px; margin: 0 auto; padding: 100px 48px 40px">
+    <div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px; margin-bottom: 48px">
+      <div style="display: flex; flex-direction: column; gap: 12px">
+        <span style="font-size: 13px; letter-spacing: .3em; text-transform: uppercase; color: var(--lime)">03 / Fotos</span>
+        <h2 style="margin: 0; font-family: 'Unbounded', sans-serif; font-weight: 900; font-size: 44px; line-height: 1.1; text-transform: uppercase"><span style="color: var(--purple)">145 BPM</span> em ação</h2>
+      </div>
+    </div>
+    <div style="columns: 300px; column-gap: 16px">
+      
+        <div class="tile" style="break-inside: avoid; margin: 0 0 16px; border-radius: 8px; overflow: hidden; border: 1px solid var(--line); background: #0d0418">
+          <img src="assets/img/fotos/01-grupo.jpg" alt="Dibe, Recursive Mind, Poran e Sidus abraçados e sorrindo na rua à noite" loading="lazy" style="display: block; width: 100%; height: auto">
+        </div>
+      
+        <div class="tile" style="break-inside: avoid; margin: 0 0 16px; border-radius: 8px; overflow: hidden; border: 1px solid var(--line); background: #0d0418">
+          <img src="assets/img/fotos/02-comemorando.jpg" alt="Sidus, Poran e Recursive Mind comemorando com os braços para cima na cabine" loading="lazy" style="display: block; width: 100%; height: auto">
+        </div>
+      
+        <div class="tile" style="break-inside: avoid; margin: 0 0 16px; border-radius: 8px; overflow: hidden; border: 1px solid var(--line); background: #0d0418">
+          <img src="assets/img/fotos/03-poran-dibe.jpg" alt="Poran concentrado nos decks, com Dibe sorrindo ao lado, sob luz azul" loading="lazy" style="display: block; width: 100%; height: auto">
+        </div>
+      
+        <div class="tile" style="break-inside: avoid; margin: 0 0 16px; border-radius: 8px; overflow: hidden; border: 1px solid var(--line); background: #0d0418">
+          <img src="assets/img/fotos/04-poran.jpg" alt="Poran sorrindo de olhos fechados ao tocar, com amigos atrás" loading="lazy" style="display: block; width: 100%; height: auto">
+        </div>
+      
+        <div class="tile" style="break-inside: avoid; margin: 0 0 16px; border-radius: 8px; overflow: hidden; border: 1px solid var(--line); background: #0d0418">
+          <img src="assets/img/fotos/05-sidus-recursive.jpg" alt="Sidus e Recursive Mind lado a lado na cabine" loading="lazy" style="display: block; width: 100%; height: auto">
+        </div>
+      
+        <div class="tile" style="break-inside: avoid; margin: 0 0 16px; border-radius: 8px; overflow: hidden; border: 1px solid var(--line); background: #0d0418">
+          <img src="assets/img/fotos/06-poran-pb.jpg" alt="Poran sorrindo com fones, em foto preto e branco, cercado pelo coletivo" loading="lazy" style="display: block; width: 100%; height: auto">
+        </div>
+      
+    </div>
+  </section>
+
+  <!-- ============ AGENDA ============ -->
+  <section id="agenda" style="max-width: 1280px; margin: 0 auto; padding: 100px 48px 40px">
+    <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 48px">
+      <span style="font-size: 13px; letter-spacing: .3em; text-transform: uppercase; color: var(--lime)">04 / Agenda</span>
+      <h2 style="margin: 0; font-family: 'Unbounded', sans-serif; font-weight: 900; font-size: 44px; line-height: 1.1; text-transform: uppercase">Próximos <span style="color: var(--purple)">encontros</span></h2>
+    </div>
+    <div style="display: flex; flex-direction: column; border-top: 1px solid var(--line)">
+      
+        <div class="card" style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 40px; padding: 28px 8px; border-bottom: 1px solid var(--line); border-left: 0; border-right: 0; border-top: 0">
+          <div style="flex: 0 0 150px; font-family: 'Unbounded', sans-serif; font-weight: 900; font-size: 28px; line-height: 1; color: #c6ff1a">10 OUT</div>
+          <div style="flex: 1 1 280px; min-width: 0">
+            <div style="font-family: 'Unbounded', sans-serif; font-weight: 700; font-size: 22px; text-transform: uppercase">92 Dimensions</div>
+            <div style="color: var(--muted); font-size: 16px">Local e atrações no Instagram</div>
+          </div>
+          <a href="https://www.instagram.com/p/DdkESrHi5E_/" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 24px; border: 1px solid #c6ff1a; border-radius: 4px; font-size: 13px; letter-spacing: .18em; text-transform: uppercase; font-weight: 600">Mais info</a>
+        </div>
+      
+        <div class="card" style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 40px; padding: 28px 8px; border-bottom: 1px solid var(--line); border-left: 0; border-right: 0; border-top: 0">
+          <div style="flex: 0 0 150px; font-family: 'Unbounded', sans-serif; font-weight: 900; font-size: 28px; line-height: 1; color: #a63cff">11 OUT</div>
+          <div style="flex: 1 1 280px; min-width: 0">
+            <div style="font-family: 'Unbounded', sans-serif; font-weight: 700; font-size: 22px; text-transform: uppercase">Barraca Dreams</div>
+            <div style="color: var(--muted); font-size: 16px">Local e atrações no Instagram</div>
+          </div>
+          <a href="https://www.instagram.com/p/Dd98bSDPUWe/" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 24px; border: 1px solid #a63cff; border-radius: 4px; font-size: 13px; letter-spacing: .18em; text-transform: uppercase; font-weight: 600">Mais info</a>
+        </div>
+      
+    </div>
+  </section>
+
+  <!-- ============ LOJA ============ -->
+  <section id="loja" style="max-width: 1280px; margin: 0 auto; padding: 100px 48px 40px">
+    <div style="position: relative; overflow: hidden; border: 1px solid var(--line); border-radius: 12px; padding: 64px 48px; background: linear-gradient(120deg, #1b0836 0%, #0b0314 50%, #1d2a04 100%); display: flex; flex-wrap: wrap; align-items: center; gap: 40px 64px">
+      <div style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 20px; position: relative">
+        <span style="font-size: 13px; letter-spacing: .3em; text-transform: uppercase; color: var(--lime)">05 / Loja virtual</span>
+        <h2 style="margin: 0; font-family: 'Unbounded', sans-serif; font-weight: 900; font-size: 44px; line-height: 1.1; text-transform: uppercase">Leve o <span style="color: var(--lime)">145</span> com você</h2>
+        <p style="margin: 0; color: var(--muted); font-size: 18px; max-width: 520px">A loja da 145 BPM ainda não está pronta, mas ficará pronta em breve. Acompanhe por aqui e pelo nosso Instagram para saber quando abrir.</p>
+        <span style="display: inline-flex; align-self: flex-start; align-items: center; gap: 12px; min-height: 44px; padding: 0 22px; border: 1px solid var(--line); border-radius: 999px; font-size: 13px; letter-spacing: .24em; text-transform: uppercase; color: var(--lime)"><span class="a-beat" style="width: 9px; height: 9px; border-radius: 50%; background: var(--lime); box-shadow: 0 0 12px var(--lime)"></span>Loja em construção</span>
+      </div>
+      <div style="flex: 1 1 380px; min-width: 0; position: relative; display: flex; align-items: center; justify-content: center; min-height: 200px">
+        <span class="a-shimmer" style="font-family: 'Unbounded', sans-serif; font-weight: 900; font-size: 64px; line-height: 1; text-transform: uppercase; text-align: center; background-image: linear-gradient(90deg, var(--purple), var(--lime), var(--purple)); -webkit-background-clip: text; background-clip: text; color: transparent">Em breve</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTATO ============ -->
+  <section id="contato" style="max-width: 1280px; margin: 0 auto; padding: 100px 48px 120px">
+    <div style="display: flex; flex-wrap: wrap; gap: 48px 80px">
+      <div style="flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
+        <span style="font-size: 13px; letter-spacing: .3em; text-transform: uppercase; color: var(--lime)">06 / Contato</span>
+        <h2 style="margin: 0; font-family: 'Unbounded', sans-serif; font-weight: 900; font-size: 44px; line-height: 1.1; text-transform: uppercase">Fale com a <span style="color: var(--purple)">145</span></h2>
+        <p style="margin: 0; color: var(--muted); font-size: 18px; max-width: 460px">Parcerias, line-up, imprensa e dúvidas. Chama a gente.</p>
+      </div>
+      <div style="flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+        <a class="card" href="https://www.instagram.com/145bpm.psy/" style="display: flex; flex-direction: column; padding: 22px 24px; border: 1px solid var(--line); border-radius: 8px; background: #0d0418">
+          <span style="font-size: 12px; letter-spacing: .28em; text-transform: uppercase; color: var(--muted)">Instagram</span>
+          <span style="font-family: 'Unbounded', sans-serif; font-weight: 700; font-size: 20px">@145bpm.psy</span>
+        </a>
+        <a class="card" href="mailto:145bpmfamily@gmail.com" style="display: flex; flex-direction: column; padding: 22px 24px; border: 1px solid var(--line); border-radius: 8px; background: #0d0418">
+          <span style="font-size: 12px; letter-spacing: .28em; text-transform: uppercase; color: var(--muted)">E-mail</span>
+          <span style="font-family: 'Unbounded', sans-serif; font-weight: 700; font-size: 20px; overflow-wrap: anywhere">145bpmfamily@gmail.com</span>
+        </a>
+        <a class="btn btn-lime" href="https://chat.whatsapp.com/KbqkWr4U1tp4w7MKxlo4Q9" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 0 28px; border-radius: 4px; background: var(--lime); color: #0b0314; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; font-size: 14px; text-align: center">Faça parte da nossa comunidade</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RODAPE ============ -->
+  <footer style="border-top: 1px solid var(--line); padding: 36px 48px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; color: var(--muted); font-size: 14px; letter-spacing: .14em; text-transform: uppercase">
+    <img src="assets/img/logos/145bpm.webp" alt="145 BPM" style="height: 48px; width: auto; display: block">
+    <span>Nascida da pista. Construída pela amizade.</span>
+    <a href="#inicio" style="color: var(--lime); min-height: 44px; display: inline-flex; align-items: center">Voltar ao topo ↑</a>
+  </footer>
+
+  </div>
+  </div>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
