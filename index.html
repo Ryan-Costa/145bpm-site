@@ -67,93 +67,170 @@
   <div style="position: relative; z-index: 2; background: var(--ink); box-shadow: 0 -60px 80px 20px var(--ink)">
 
 <!-- ============ DIVISOR (onda sonora) ============ -->
-  <div class="wave-divider" aria-hidden="true" style="position: relative; height: 104px; display: flex; align-items: center; justify-content: center; overflow: hidden">
-    <div style="position: absolute; left: 0; right: 0; top: 50%; height: 1px; background: linear-gradient(90deg, transparent 0%, var(--purple) 28%, var(--lime) 72%, transparent 100%); opacity: .5"></div>
-    <svg class="wave-pulse" width="560" height="64" viewBox="0 0 560 64" xmlns="http://www.w3.org/2000/svg" style="position: relative; max-width: 88%; height: auto; filter: drop-shadow(0 0 6px rgba(166, 60, 255, .55))">
-      <defs><linearGradient id="wave-grad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="560" y2="0"><stop offset="0" stop-color="#a63cff"/><stop offset="1" stop-color="#c6ff1a"/></linearGradient></defs>
-      <g stroke="url(#wave-grad)" stroke-width="2.5" stroke-linecap="round">
-        <line x1="3.5" y1="29.8" x2="3.5" y2="34.2"/>
-        <line x1="10.5" y1="29.7" x2="10.5" y2="34.3"/>
-        <line x1="17.5" y1="29.6" x2="17.5" y2="34.4"/>
-        <line x1="24.5" y1="29.3" x2="24.5" y2="34.7"/>
-        <line x1="31.5" y1="29.3" x2="31.5" y2="34.7"/>
-        <line x1="38.5" y1="29.2" x2="38.5" y2="34.8"/>
-        <line x1="45.5" y1="29.2" x2="45.5" y2="34.8"/>
-        <line x1="52.5" y1="28.8" x2="52.5" y2="35.2"/>
-        <line x1="59.5" y1="28.2" x2="59.5" y2="35.8"/>
-        <line x1="66.5" y1="28.4" x2="66.5" y2="35.6"/>
-        <line x1="73.5" y1="27.9" x2="73.5" y2="36.1"/>
-        <line x1="80.5" y1="28.2" x2="80.5" y2="35.8"/>
-        <line x1="87.5" y1="26.9" x2="87.5" y2="37.1"/>
-        <line x1="94.5" y1="27.5" x2="94.5" y2="36.5"/>
-        <line x1="101.5" y1="25.4" x2="101.5" y2="38.6"/>
-        <line x1="108.5" y1="26.5" x2="108.5" y2="37.5"/>
-        <line x1="115.5" y1="26.3" x2="115.5" y2="37.7"/>
-        <line x1="122.5" y1="24.8" x2="122.5" y2="39.2"/>
-        <line x1="129.5" y1="23.0" x2="129.5" y2="41.0"/>
-        <line x1="136.5" y1="22.1" x2="136.5" y2="41.9"/>
-        <line x1="143.5" y1="23.2" x2="143.5" y2="40.8"/>
-        <line x1="150.5" y1="23.4" x2="150.5" y2="40.6"/>
-        <line x1="157.5" y1="22.2" x2="157.5" y2="41.8"/>
-        <line x1="164.5" y1="16.8" x2="164.5" y2="47.2"/>
-        <line x1="171.5" y1="21.7" x2="171.5" y2="42.3"/>
-        <line x1="178.5" y1="17.7" x2="178.5" y2="46.3"/>
-        <line x1="185.5" y1="20.4" x2="185.5" y2="43.6"/>
-        <line x1="192.5" y1="14.7" x2="192.5" y2="49.3"/>
-        <line x1="199.5" y1="15.2" x2="199.5" y2="48.8"/>
-        <line x1="206.5" y1="11.5" x2="206.5" y2="52.5"/>
-        <line x1="213.5" y1="14.6" x2="213.5" y2="49.4"/>
-        <line x1="220.5" y1="16.6" x2="220.5" y2="47.4"/>
-        <line x1="227.5" y1="10.6" x2="227.5" y2="53.4"/>
-        <line x1="234.5" y1="11.5" x2="234.5" y2="52.5"/>
-        <line x1="241.5" y1="5.8" x2="241.5" y2="58.2"/>
-        <line x1="248.5" y1="14.3" x2="248.5" y2="49.7"/>
-        <line x1="255.5" y1="13.7" x2="255.5" y2="50.3"/>
-        <line x1="262.5" y1="14.3" x2="262.5" y2="49.7"/>
-        <line x1="269.5" y1="2.6" x2="269.5" y2="61.4"/>
-        <line x1="276.5" y1="11.0" x2="276.5" y2="53.0"/>
-        <line x1="283.5" y1="9.2" x2="283.5" y2="54.8"/>
-        <line x1="290.5" y1="13.8" x2="290.5" y2="50.2"/>
-        <line x1="297.5" y1="8.4" x2="297.5" y2="55.6"/>
-        <line x1="304.5" y1="6.1" x2="304.5" y2="57.9"/>
-        <line x1="311.5" y1="9.4" x2="311.5" y2="54.6"/>
-        <line x1="318.5" y1="10.9" x2="318.5" y2="53.1"/>
-        <line x1="325.5" y1="15.7" x2="325.5" y2="48.3"/>
-        <line x1="332.5" y1="9.4" x2="332.5" y2="54.6"/>
-        <line x1="339.5" y1="16.5" x2="339.5" y2="47.5"/>
-        <line x1="346.5" y1="9.0" x2="346.5" y2="55.0"/>
-        <line x1="353.5" y1="17.8" x2="353.5" y2="46.2"/>
-        <line x1="360.5" y1="18.0" x2="360.5" y2="46.0"/>
-        <line x1="367.5" y1="17.4" x2="367.5" y2="46.6"/>
-        <line x1="374.5" y1="14.1" x2="374.5" y2="49.9"/>
-        <line x1="381.5" y1="17.2" x2="381.5" y2="46.8"/>
-        <line x1="388.5" y1="19.9" x2="388.5" y2="44.1"/>
-        <line x1="395.5" y1="21.8" x2="395.5" y2="42.2"/>
-        <line x1="402.5" y1="21.4" x2="402.5" y2="42.6"/>
-        <line x1="409.5" y1="19.2" x2="409.5" y2="44.8"/>
-        <line x1="416.5" y1="23.5" x2="416.5" y2="40.5"/>
-        <line x1="423.5" y1="23.2" x2="423.5" y2="40.8"/>
-        <line x1="430.5" y1="25.5" x2="430.5" y2="38.5"/>
-        <line x1="437.5" y1="23.8" x2="437.5" y2="40.2"/>
-        <line x1="444.5" y1="25.7" x2="444.5" y2="38.3"/>
-        <line x1="451.5" y1="24.9" x2="451.5" y2="39.1"/>
-        <line x1="458.5" y1="26.8" x2="458.5" y2="37.2"/>
-        <line x1="465.5" y1="27.4" x2="465.5" y2="36.6"/>
-        <line x1="472.5" y1="27.1" x2="472.5" y2="36.9"/>
-        <line x1="479.5" y1="27.4" x2="479.5" y2="36.6"/>
-        <line x1="486.5" y1="27.6" x2="486.5" y2="36.4"/>
-        <line x1="493.5" y1="28.6" x2="493.5" y2="35.4"/>
-        <line x1="500.5" y1="28.8" x2="500.5" y2="35.2"/>
-        <line x1="507.5" y1="29.0" x2="507.5" y2="35.0"/>
-        <line x1="514.5" y1="28.6" x2="514.5" y2="35.4"/>
-        <line x1="521.5" y1="29.3" x2="521.5" y2="34.7"/>
-        <line x1="528.5" y1="29.3" x2="528.5" y2="34.7"/>
-        <line x1="535.5" y1="29.5" x2="535.5" y2="34.5"/>
-        <line x1="542.5" y1="29.5" x2="542.5" y2="34.5"/>
-        <line x1="549.5" y1="29.6" x2="549.5" y2="34.4"/>
-        <line x1="556.5" y1="29.6" x2="556.5" y2="34.4"/>
-      </g>
-    </svg>
+  <div class="wave-divider" aria-hidden="true" style="position: relative; height: 120px; overflow: hidden">
+    <div style="position: absolute; left: 0; right: 0; top: 50%; height: 1px; background: linear-gradient(90deg, var(--purple), var(--lime)); opacity: .35"></div>
+    <div class="wave-bars wave-pulse">
+      <i style="height:8px;background:#a63cff"></i>
+      <i style="height:8px;background:#a63dfe"></i>
+      <i style="height:9px;background:#a63efc"></i>
+      <i style="height:16px;background:#a740fb"></i>
+      <i style="height:12px;background:#a741f9"></i>
+      <i style="height:12px;background:#a742f8"></i>
+      <i style="height:9px;background:#a743f6"></i>
+      <i style="height:13px;background:#a745f5"></i>
+      <i style="height:17px;background:#a846f3"></i>
+      <i style="height:13px;background:#a847f2"></i>
+      <i style="height:15px;background:#a848f1"></i>
+      <i style="height:10px;background:#a849ef"></i>
+      <i style="height:17px;background:#a84bee"></i>
+      <i style="height:11px;background:#a94cec"></i>
+      <i style="height:20px;background:#a94deb"></i>
+      <i style="height:13px;background:#a94ee9"></i>
+      <i style="height:12px;background:#a950e8"></i>
+      <i style="height:16px;background:#a951e7"></i>
+      <i style="height:20px;background:#aa52e5"></i>
+      <i style="height:21px;background:#aa53e4"></i>
+      <i style="height:16px;background:#aa55e2"></i>
+      <i style="height:14px;background:#aa56e1"></i>
+      <i style="height:16px;background:#aa57df"></i>
+      <i style="height:27px;background:#ab58de"></i>
+      <i style="height:14px;background:#ab59dc"></i>
+      <i style="height:22px;background:#ab5bdb"></i>
+      <i style="height:15px;background:#ab5cda"></i>
+      <i style="height:25px;background:#ab5dd8"></i>
+      <i style="height:23px;background:#ac5ed7"></i>
+      <i style="height:28px;background:#ac60d5"></i>
+      <i style="height:22px;background:#ac61d4"></i>
+      <i style="height:18px;background:#ac62d2"></i>
+      <i style="height:27px;background:#ac63d1"></i>
+      <i style="height:26px;background:#ad64cf"></i>
+      <i style="height:34px;background:#ad66ce"></i>
+      <i style="height:21px;background:#ad67cd"></i>
+      <i style="height:22px;background:#ad68cb"></i>
+      <i style="height:21px;background:#ad69ca"></i>
+      <i style="height:40px;background:#ae6bc8"></i>
+      <i style="height:27px;background:#ae6cc7"></i>
+      <i style="height:31px;background:#ae6dc5"></i>
+      <i style="height:24px;background:#ae6ec4"></i>
+      <i style="height:34px;background:#ae70c3"></i>
+      <i style="height:40px;background:#af71c1"></i>
+      <i style="height:36px;background:#af72c0"></i>
+      <i style="height:35px;background:#af73be"></i>
+      <i style="height:26px;background:#af74bd"></i>
+      <i style="height:43px;background:#af76bb"></i>
+      <i style="height:28px;background:#b077ba"></i>
+      <i style="height:50px;background:#b078b8"></i>
+      <i style="height:29px;background:#b079b7"></i>
+      <i style="height:31px;background:#b07bb6"></i>
+      <i style="height:37px;background:#b07cb4"></i>
+      <i style="height:53px;background:#b17db3"></i>
+      <i style="height:46px;background:#b17eb1"></i>
+      <i style="height:39px;background:#b17fb0"></i>
+      <i style="height:34px;background:#b181ae"></i>
+      <i style="height:41px;background:#b182ad"></i>
+      <i style="height:60px;background:#b283ab"></i>
+      <i style="height:38px;background:#b284aa"></i>
+      <i style="height:47px;background:#b286a9"></i>
+      <i style="height:33px;background:#b287a7"></i>
+      <i style="height:56px;background:#b288a6"></i>
+      <i style="height:43px;background:#b389a4"></i>
+      <i style="height:61px;background:#b38aa3"></i>
+      <i style="height:42px;background:#b38ca1"></i>
+      <i style="height:39px;background:#b38da0"></i>
+      <i style="height:53px;background:#b38e9f"></i>
+      <i style="height:56px;background:#b48f9d"></i>
+      <i style="height:63px;background:#b4919c"></i>
+      <i style="height:42px;background:#b4929a"></i>
+      <i style="height:42px;background:#b49399"></i>
+      <i style="height:39px;background:#b49497"></i>
+      <i style="height:73px;background:#b59696"></i>
+      <i style="height:41px;background:#b59794"></i>
+      <i style="height:52px;background:#b59893"></i>
+      <i style="height:39px;background:#b59992"></i>
+      <i style="height:60px;background:#b59a90"></i>
+      <i style="height:59px;background:#b69c8f"></i>
+      <i style="height:60px;background:#b69d8d"></i>
+      <i style="height:49px;background:#b69e8c"></i>
+      <i style="height:41px;background:#b69f8a"></i>
+      <i style="height:62px;background:#b7a189"></i>
+      <i style="height:47px;background:#b7a287"></i>
+      <i style="height:68px;background:#b7a386"></i>
+      <i style="height:37px;background:#b7a485"></i>
+      <i style="height:44px;background:#b7a583"></i>
+      <i style="height:43px;background:#b8a782"></i>
+      <i style="height:69px;background:#b8a880"></i>
+      <i style="height:51px;background:#b8a97f"></i>
+      <i style="height:47px;background:#b8aa7d"></i>
+      <i style="height:40px;background:#b8ac7c"></i>
+      <i style="height:51px;background:#b9ad7a"></i>
+      <i style="height:64px;background:#b9ae79"></i>
+      <i style="height:46px;background:#b9af78"></i>
+      <i style="height:47px;background:#b9b176"></i>
+      <i style="height:35px;background:#b9b275"></i>
+      <i style="height:58px;background:#bab373"></i>
+      <i style="height:36px;background:#bab472"></i>
+      <i style="height:59px;background:#bab570"></i>
+      <i style="height:36px;background:#bab76f"></i>
+      <i style="height:38px;background:#bab86e"></i>
+      <i style="height:44px;background:#bbb96c"></i>
+      <i style="height:53px;background:#bbba6b"></i>
+      <i style="height:49px;background:#bbbc69"></i>
+      <i style="height:35px;background:#bbbd68"></i>
+      <i style="height:35px;background:#bbbe66"></i>
+      <i style="height:35px;background:#bcbf65"></i>
+      <i style="height:55px;background:#bcc063"></i>
+      <i style="height:28px;background:#bcc262"></i>
+      <i style="height:37px;background:#bcc361"></i>
+      <i style="height:27px;background:#bcc45f"></i>
+      <i style="height:44px;background:#bdc55e"></i>
+      <i style="height:36px;background:#bdc75c"></i>
+      <i style="height:41px;background:#bdc85b"></i>
+      <i style="height:30px;background:#bdc959"></i>
+      <i style="height:27px;background:#bdca58"></i>
+      <i style="height:37px;background:#becb56"></i>
+      <i style="height:32px;background:#becd55"></i>
+      <i style="height:39px;background:#bece54"></i>
+      <i style="height:23px;background:#becf52"></i>
+      <i style="height:26px;background:#bed051"></i>
+      <i style="height:21px;background:#bfd24f"></i>
+      <i style="height:39px;background:#bfd34e"></i>
+      <i style="height:24px;background:#bfd44c"></i>
+      <i style="height:24px;background:#bfd54b"></i>
+      <i style="height:21px;background:#bfd74a"></i>
+      <i style="height:28px;background:#c0d848"></i>
+      <i style="height:29px;background:#c0d947"></i>
+      <i style="height:24px;background:#c0da45"></i>
+      <i style="height:21px;background:#c0db44"></i>
+      <i style="height:17px;background:#c0dd42"></i>
+      <i style="height:27px;background:#c1de41"></i>
+      <i style="height:16px;background:#c1df3f"></i>
+      <i style="height:26px;background:#c1e03e"></i>
+      <i style="height:15px;background:#c1e23d"></i>
+      <i style="height:17px;background:#c1e33b"></i>
+      <i style="height:17px;background:#c2e43a"></i>
+      <i style="height:24px;background:#c2e538"></i>
+      <i style="height:19px;background:#c2e637"></i>
+      <i style="height:15px;background:#c2e835"></i>
+      <i style="height:15px;background:#c2e934"></i>
+      <i style="height:16px;background:#c3ea32"></i>
+      <i style="height:22px;background:#c3eb31"></i>
+      <i style="height:13px;background:#c3ed30"></i>
+      <i style="height:14px;background:#c3ee2e"></i>
+      <i style="height:10px;background:#c3ef2d"></i>
+      <i style="height:18px;background:#c4f02b"></i>
+      <i style="height:13px;background:#c4f22a"></i>
+      <i style="height:17px;background:#c4f328"></i>
+      <i style="height:11px;background:#c4f427"></i>
+      <i style="height:11px;background:#c4f526"></i>
+      <i style="height:14px;background:#c5f624"></i>
+      <i style="height:14px;background:#c5f823"></i>
+      <i style="height:15px;background:#c5f921"></i>
+      <i style="height:9px;background:#c5fa20"></i>
+      <i style="height:11px;background:#c5fb1e"></i>
+      <i style="height:9px;background:#c6fd1d"></i>
+      <i style="height:16px;background:#c6fe1b"></i>
+      <i style="height:9px;background:#c6ff1a"></i>
+    </div>
   </div>
 
   <!-- ============ SOBRE ============ -->
