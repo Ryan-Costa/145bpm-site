@@ -105,3 +105,8 @@ a{color:inherit;text-decoration:none}
 @media (max-width: 900px){
   .video-card{flex:1 1 100% !important;max-width:420px;margin-left:auto;margin-right:auto}
 }
+
+/* Divisor com onda sonora: respira no ritmo de 2 batidas de 145 BPM */
+@keyframes wavebeat{0%,100%{transform:scaleY(.8)}50%{transform:scaleY(1)}}
+.wave-pulse{animation:wavebeat .8276s ease-in-out infinite;transform-origin:center}
+@media (prefers-reduced-motion: reduce){.wave-pulse{animation:none}}

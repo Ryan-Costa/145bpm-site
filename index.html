@@ -66,81 +66,94 @@
   <!-- conteudo que sobe por cima do video -->
   <div style="position: relative; z-index: 2; background: var(--ink); box-shadow: 0 -60px 80px 20px var(--ink)">
 
-<!-- ============ TICKER ============ -->
-  <div style="border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: #0d0418; overflow: hidden; white-space: nowrap">
-    <div class="a-marquee" style="display: inline-flex; width: max-content">
-      
-        <span style="display: inline-flex; align-items: center; gap: 28px; padding: 18px 28px 18px 0; font-family: 'Unbounded', sans-serif; font-weight: 700; font-size: 15px; letter-spacing: .12em; text-transform: uppercase; color: #c6ff1a">
-          145 BPM
-          <span style="color: var(--muted)">✦</span>
-        </span>
-      
-        <span style="display: inline-flex; align-items: center; gap: 28px; padding: 18px 28px 18px 0; font-family: 'Unbounded', sans-serif; font-weight: 700; font-size: 15px; letter-spacing: .12em; text-transform: uppercase; color: #f3eefb">
-          Nascida da pista
-          <span style="color: var(--muted)">✦</span>
-        </span>
-      
-        <span style="display: inline-flex; align-items: center; gap: 28px; padding: 18px 28px 18px 0; font-family: 'Unbounded', sans-serif; font-weight: 700; font-size: 15px; letter-spacing: .12em; text-transform: uppercase; color: #a63cff">
-          Dibe
-          <span style="color: var(--muted)">✦</span>
-        </span>
-      
-        <span style="display: inline-flex; align-items: center; gap: 28px; padding: 18px 28px 18px 0; font-family: 'Unbounded', sans-serif; font-weight: 700; font-size: 15px; letter-spacing: .12em; text-transform: uppercase; color: #c6ff1a">
-          Sidus
-          <span style="color: var(--muted)">✦</span>
-        </span>
-      
-        <span style="display: inline-flex; align-items: center; gap: 28px; padding: 18px 28px 18px 0; font-family: 'Unbounded', sans-serif; font-weight: 700; font-size: 15px; letter-spacing: .12em; text-transform: uppercase; color: #f3eefb">
-          Construída pela amizade
-          <span style="color: var(--muted)">✦</span>
-        </span>
-      
-        <span style="display: inline-flex; align-items: center; gap: 28px; padding: 18px 28px 18px 0; font-family: 'Unbounded', sans-serif; font-weight: 700; font-size: 15px; letter-spacing: .12em; text-transform: uppercase; color: #a63cff">
-          Recursive Mind
-          <span style="color: var(--muted)">✦</span>
-        </span>
-      
-        <span style="display: inline-flex; align-items: center; gap: 28px; padding: 18px 28px 18px 0; font-family: 'Unbounded', sans-serif; font-weight: 700; font-size: 15px; letter-spacing: .12em; text-transform: uppercase; color: #c6ff1a">
-          Poran
-          <span style="color: var(--muted)">✦</span>
-        </span>
-      
-        <span style="display: inline-flex; align-items: center; gap: 28px; padding: 18px 28px 18px 0; font-family: 'Unbounded', sans-serif; font-weight: 700; font-size: 15px; letter-spacing: .12em; text-transform: uppercase; color: #c6ff1a">
-          145 BPM
-          <span style="color: var(--muted)">✦</span>
-        </span>
-      
-        <span style="display: inline-flex; align-items: center; gap: 28px; padding: 18px 28px 18px 0; font-family: 'Unbounded', sans-serif; font-weight: 700; font-size: 15px; letter-spacing: .12em; text-transform: uppercase; color: #f3eefb">
-          Nascida da pista
-          <span style="color: var(--muted)">✦</span>
-        </span>
-      
-        <span style="display: inline-flex; align-items: center; gap: 28px; padding: 18px 28px 18px 0; font-family: 'Unbounded', sans-serif; font-weight: 700; font-size: 15px; letter-spacing: .12em; text-transform: uppercase; color: #a63cff">
-          Dibe
-          <span style="color: var(--muted)">✦</span>
-        </span>
-      
-        <span style="display: inline-flex; align-items: center; gap: 28px; padding: 18px 28px 18px 0; font-family: 'Unbounded', sans-serif; font-weight: 700; font-size: 15px; letter-spacing: .12em; text-transform: uppercase; color: #c6ff1a">
-          Sidus
-          <span style="color: var(--muted)">✦</span>
-        </span>
-      
-        <span style="display: inline-flex; align-items: center; gap: 28px; padding: 18px 28px 18px 0; font-family: 'Unbounded', sans-serif; font-weight: 700; font-size: 15px; letter-spacing: .12em; text-transform: uppercase; color: #f3eefb">
-          Construída pela amizade
-          <span style="color: var(--muted)">✦</span>
-        </span>
-      
-        <span style="display: inline-flex; align-items: center; gap: 28px; padding: 18px 28px 18px 0; font-family: 'Unbounded', sans-serif; font-weight: 700; font-size: 15px; letter-spacing: .12em; text-transform: uppercase; color: #a63cff">
-          Recursive Mind
-          <span style="color: var(--muted)">✦</span>
-        </span>
-      
-        <span style="display: inline-flex; align-items: center; gap: 28px; padding: 18px 28px 18px 0; font-family: 'Unbounded', sans-serif; font-weight: 700; font-size: 15px; letter-spacing: .12em; text-transform: uppercase; color: #c6ff1a">
-          Poran
-          <span style="color: var(--muted)">✦</span>
-        </span>
-      
-    </div>
+<!-- ============ DIVISOR (onda sonora) ============ -->
+  <div class="wave-divider" aria-hidden="true" style="position: relative; height: 104px; display: flex; align-items: center; justify-content: center; overflow: hidden">
+    <div style="position: absolute; left: 0; right: 0; top: 50%; height: 1px; background: linear-gradient(90deg, transparent 0%, var(--purple) 28%, var(--lime) 72%, transparent 100%); opacity: .5"></div>
+    <svg class="wave-pulse" width="560" height="64" viewBox="0 0 560 64" xmlns="http://www.w3.org/2000/svg" style="position: relative; max-width: 88%; height: auto; filter: drop-shadow(0 0 6px rgba(166, 60, 255, .55))">
+      <defs><linearGradient id="wave-grad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="560" y2="0"><stop offset="0" stop-color="#a63cff"/><stop offset="1" stop-color="#c6ff1a"/></linearGradient></defs>
+      <g stroke="url(#wave-grad)" stroke-width="2.5" stroke-linecap="round">
+        <line x1="3.5" y1="29.8" x2="3.5" y2="34.2"/>
+        <line x1="10.5" y1="29.7" x2="10.5" y2="34.3"/>
+        <line x1="17.5" y1="29.6" x2="17.5" y2="34.4"/>
+        <line x1="24.5" y1="29.3" x2="24.5" y2="34.7"/>
+        <line x1="31.5" y1="29.3" x2="31.5" y2="34.7"/>
+        <line x1="38.5" y1="29.2" x2="38.5" y2="34.8"/>
+        <line x1="45.5" y1="29.2" x2="45.5" y2="34.8"/>
+        <line x1="52.5" y1="28.8" x2="52.5" y2="35.2"/>
+        <line x1="59.5" y1="28.2" x2="59.5" y2="35.8"/>
+        <line x1="66.5" y1="28.4" x2="66.5" y2="35.6"/>
+        <line x1="73.5" y1="27.9" x2="73.5" y2="36.1"/>
+        <line x1="80.5" y1="28.2" x2="80.5" y2="35.8"/>
+        <line x1="87.5" y1="26.9" x2="87.5" y2="37.1"/>
+        <line x1="94.5" y1="27.5" x2="94.5" y2="36.5"/>
+        <line x1="101.5" y1="25.4" x2="101.5" y2="38.6"/>
+        <line x1="108.5" y1="26.5" x2="108.5" y2="37.5"/>
+        <line x1="115.5" y1="26.3" x2="115.5" y2="37.7"/>
+        <line x1="122.5" y1="24.8" x2="122.5" y2="39.2"/>
+        <line x1="129.5" y1="23.0" x2="129.5" y2="41.0"/>
+        <line x1="136.5" y1="22.1" x2="136.5" y2="41.9"/>
+        <line x1="143.5" y1="23.2" x2="143.5" y2="40.8"/>
+        <line x1="150.5" y1="23.4" x2="150.5" y2="40.6"/>
+        <line x1="157.5" y1="22.2" x2="157.5" y2="41.8"/>
+        <line x1="164.5" y1="16.8" x2="164.5" y2="47.2"/>
+        <line x1="171.5" y1="21.7" x2="171.5" y2="42.3"/>
+        <line x1="178.5" y1="17.7" x2="178.5" y2="46.3"/>
+        <line x1="185.5" y1="20.4" x2="185.5" y2="43.6"/>
+        <line x1="192.5" y1="14.7" x2="192.5" y2="49.3"/>
+        <line x1="199.5" y1="15.2" x2="199.5" y2="48.8"/>
+        <line x1="206.5" y1="11.5" x2="206.5" y2="52.5"/>
+        <line x1="213.5" y1="14.6" x2="213.5" y2="49.4"/>
+        <line x1="220.5" y1="16.6" x2="220.5" y2="47.4"/>
+        <line x1="227.5" y1="10.6" x2="227.5" y2="53.4"/>
+        <line x1="234.5" y1="11.5" x2="234.5" y2="52.5"/>
+        <line x1="241.5" y1="5.8" x2="241.5" y2="58.2"/>
+        <line x1="248.5" y1="14.3" x2="248.5" y2="49.7"/>
+        <line x1="255.5" y1="13.7" x2="255.5" y2="50.3"/>
+        <line x1="262.5" y1="14.3" x2="262.5" y2="49.7"/>
+        <line x1="269.5" y1="2.6" x2="269.5" y2="61.4"/>
+        <line x1="276.5" y1="11.0" x2="276.5" y2="53.0"/>
+        <line x1="283.5" y1="9.2" x2="283.5" y2="54.8"/>
+        <line x1="290.5" y1="13.8" x2="290.5" y2="50.2"/>
+        <line x1="297.5" y1="8.4" x2="297.5" y2="55.6"/>
+        <line x1="304.5" y1="6.1" x2="304.5" y2="57.9"/>
+        <line x1="311.5" y1="9.4" x2="311.5" y2="54.6"/>
+        <line x1="318.5" y1="10.9" x2="318.5" y2="53.1"/>
+        <line x1="325.5" y1="15.7" x2="325.5" y2="48.3"/>
+        <line x1="332.5" y1="9.4" x2="332.5" y2="54.6"/>
+        <line x1="339.5" y1="16.5" x2="339.5" y2="47.5"/>
+        <line x1="346.5" y1="9.0" x2="346.5" y2="55.0"/>
+        <line x1="353.5" y1="17.8" x2="353.5" y2="46.2"/>
+        <line x1="360.5" y1="18.0" x2="360.5" y2="46.0"/>
+        <line x1="367.5" y1="17.4" x2="367.5" y2="46.6"/>
+        <line x1="374.5" y1="14.1" x2="374.5" y2="49.9"/>
+        <line x1="381.5" y1="17.2" x2="381.5" y2="46.8"/>
+        <line x1="388.5" y1="19.9" x2="388.5" y2="44.1"/>
+        <line x1="395.5" y1="21.8" x2="395.5" y2="42.2"/>
+        <line x1="402.5" y1="21.4" x2="402.5" y2="42.6"/>
+        <line x1="409.5" y1="19.2" x2="409.5" y2="44.8"/>
+        <line x1="416.5" y1="23.5" x2="416.5" y2="40.5"/>
+        <line x1="423.5" y1="23.2" x2="423.5" y2="40.8"/>
+        <line x1="430.5" y1="25.5" x2="430.5" y2="38.5"/>
+        <line x1="437.5" y1="23.8" x2="437.5" y2="40.2"/>
+        <line x1="444.5" y1="25.7" x2="444.5" y2="38.3"/>
+        <line x1="451.5" y1="24.9" x2="451.5" y2="39.1"/>
+        <line x1="458.5" y1="26.8" x2="458.5" y2="37.2"/>
+        <line x1="465.5" y1="27.4" x2="465.5" y2="36.6"/>
+        <line x1="472.5" y1="27.1" x2="472.5" y2="36.9"/>
+        <line x1="479.5" y1="27.4" x2="479.5" y2="36.6"/>
+        <line x1="486.5" y1="27.6" x2="486.5" y2="36.4"/>
+        <line x1="493.5" y1="28.6" x2="493.5" y2="35.4"/>
+        <line x1="500.5" y1="28.8" x2="500.5" y2="35.2"/>
+        <line x1="507.5" y1="29.0" x2="507.5" y2="35.0"/>
+        <line x1="514.5" y1="28.6" x2="514.5" y2="35.4"/>
+        <line x1="521.5" y1="29.3" x2="521.5" y2="34.7"/>
+        <line x1="528.5" y1="29.3" x2="528.5" y2="34.7"/>
+        <line x1="535.5" y1="29.5" x2="535.5" y2="34.5"/>
+        <line x1="542.5" y1="29.5" x2="542.5" y2="34.5"/>
+        <line x1="549.5" y1="29.6" x2="549.5" y2="34.4"/>
+        <line x1="556.5" y1="29.6" x2="556.5" y2="34.4"/>
+      </g>
+    </svg>
   </div>
 
   <!-- ============ SOBRE ============ -->
